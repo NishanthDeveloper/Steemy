@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "597699757571",
+    "project_id": "steemy-b2316",
+    "storage_bucket": "steemy-b2316.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597699757571:android:e4db8e349a3c48de0b7036",
+        "android_client_info": {
+          "package_name": "com.example.meal_monkey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597699757571-nlnl3r0v40mqtdds0j4g55m8gbffj2at.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.meal_monkey",
+            "certificate_hash": "1a61d96ce73b60346f410dec7dbd138ab08ea569"
+          }
+        },
+        {
+          "client_id": "597699757571-1tirfg1hkht6o05gounab816mgtm5emd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_fnprOJtLX4E4xlhiY-wtC_y5hm9bxcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597699757571-1tirfg1hkht6o05gounab816mgtm5emd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
