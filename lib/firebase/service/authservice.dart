@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:meal_monkey/firebase/service/database_services.dart';
 
-import '../../helper/helper_function.dart';
+
 class AuthService{
   final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
   Future loginWithEmailandPassword(String email ,String password) async{
@@ -38,14 +38,5 @@ class AuthService{
       return e.message;
     }
   }
-  Future signOut() async{
-    try{
-      await HelperFunction.saveUserLoggedInStatus(false);
-      await HelperFunction.saveUserEmailSF("");
-      await HelperFunction.saveUserNameSF("");
-      await firebaseAuth.signOut();
-    }catch(e){
-      return null;
-    }
-  }
+
 }

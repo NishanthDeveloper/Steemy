@@ -8,7 +8,7 @@ import 'package:meal_monkey/screens/login_page.dart';
 import 'package:meal_monkey/widgets/text_field_widget.dart';
 
 import '../authentication/firebase_authentication/auth_service.dart';
-import '../helper/helper_function.dart';
+
 import 'home_screen.dart';
 class RegistrationPage extends StatefulWidget {
   const RegistrationPage({Key? key}) : super(key: key);
@@ -220,9 +220,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
       });
       await authService.registerUserWithEmailandPassword(fullName, email, password,phone,address).then((value)async{
         if(value == true){
-          await HelperFunction.saveUserLoggedInStatus(true);
-          await HelperFunction.saveUserEmailSF(email);
-          await HelperFunction.saveUserNameSF(fullName);
+
           Get.to(HomeScreen());
 
         }else{

@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:meal_monkey/lib/screens/account-screen.dart';
-import 'package:meal_monkey/lib/screens/cart_screen.dart';
+import 'package:meal_monkey/screens/cart_screen.dart';
 
 import '../screens/home_screen.dart';
 
@@ -16,9 +15,8 @@ class _NavBarRootsState extends State<NavBarRoots> {
   int _selectedIndex = 0;
   final _screens = [
     HomeScreen(),
-  Container(),
-   CartScreen(),
-  AccountScreen(),
+    Container(),
+    CartScreen(),
   ];
 
   @override
@@ -43,9 +41,12 @@ class _NavBarRootsState extends State<NavBarRoots> {
         },
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.heart_fill), label: "Favorites"),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.cart_fill), label: "Cart"),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.cube_box_fill), label: "Orders"),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.heart_fill), label: "Favorites"),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.cart_fill), label: "Cart"),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.cube_box_fill), label: "Orders"),
         ],
       ),
     );

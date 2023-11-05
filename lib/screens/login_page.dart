@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'package:lottie/lottie.dart';
 import 'package:get/get.dart';
-import 'package:meal_monkey/helper/helper_function.dart';
+
 import 'package:meal_monkey/screens/register_page.dart';
 import '../authentication/firebase_authentication/auth_service.dart';
 import '../firebase/service/database_services.dart';
@@ -146,9 +146,7 @@ body:_isLoading ? Center(child: CircularProgressIndicator(color: Colors.cyan,),)
       await authService.loginWithEmailandPassword( email, password).then((value)async{
         if(value == true){
      QuerySnapshot snapshot =     await DatabaseService(uid: FirebaseAuth.instance.currentUser!.uid).gettingUserData(email);
-     await HelperFunction.saveUserLoggedInStatus(true);
-     await HelperFunction.saveUserEmailSF(email);
-     await HelperFunction.saveUserNameSF(snapshot.docs[0]['fullName']);
+
           Get.to(HomeScreen());
 
         }else{
